@@ -392,16 +392,16 @@ h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 6px;
-  background-color: #fff;
+  background-color: #1b1b1b; 
   overflow-y: auto;
   transition: 0.3s;
 }
-
+/*color of nav bar menue drop*/
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #1a1814;
+  color: #b8b7b5;
 }
 
 .navbar-mobile a:hover,
