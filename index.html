@@ -45,7 +45,7 @@
 
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-phone d-flex align-items-center"><span>+1 674-198-2047</span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 11PM</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Sun-Thur: 11AM - 11PM | Fri-Sat 10AM - 12:30AM</span></i>
       </div>
 
       
@@ -74,7 +74,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
+      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Place an order</a>
       
 
     </div>
@@ -90,7 +90,7 @@
 
           <div class="btns">
             <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
-            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
+            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Place an order</a>
           </div>
         </div>
         <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
@@ -290,7 +290,52 @@
 
       </div>
     </section><!-- End Menu Section -->
+    <!-- ======= Ordering Section ======= -->
+    <section id="book-a-table" class="book-a-table">
+      <div class="container" data-aos="fade-up">
 
+        <div class="section-title">
+          <h2>Ordering</h2>
+          <p>Place on order</p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="text" class="form-control" name="time" id="time" placeholder="Time of pickup or delivery" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Please discribe what you would like to order, with the name of the item and any modifications"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your order was sent. We will call back or send an Email to confirm your order. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Place Order</button></div>
+        </form>
+
+      </div>
+    </section><!-- End Ordering Section -->
     <!-- ======= Specials Section ======= -->
     <section id="specials" class="specials">
       <div class="container" data-aos="fade-up">
@@ -316,7 +361,7 @@
                 <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Summer Senior Celebration</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Bart's Birthday Deal</a>
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Monster Burger Smash</a>
               </li>
             </ul>
           </div>
@@ -326,7 +371,7 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Mondays-Fridays</h3>
-                    <p class="fst-italic">Kids 12 and under will eat free.</p>
+                    <p class="fst-italic">Enjoy a relaxing night with your kids and not worry about that pricing. Kids 12 and under will eat free.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/specials-1.png" alt="" class="img-fluid">
@@ -337,7 +382,7 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Fridays-Sundays 2:30 pm - 5:30 pm</h3>
-                    <p class="fst-italic">Half price on all drinks.</p>
+                    <p class="fst-italic">Come in or order one of great drinks we have to offer for half the price. </p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/specials-2.png" alt="" class="img-fluid">
@@ -347,8 +392,8 @@
               <div class="tab-pane" id="tab-3">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Throughout February</h3>
-                    <p class="fst-italic">10% off everything on the menu.</p>
+                    <h3>Throughout February of 2024</h3>
+                    <p class="fst-italic">Come and celibrate our anniversary! we are offering 10%-40% off on everything on the menu</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/specials-3.png" alt="" class="img-fluid">
@@ -358,8 +403,8 @@
               <div class="tab-pane" id="tab-4">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Mondays - Fridays in Summer from 2:30pm - closing </h3>
-                    <p class="fst-italic">Seniors 65 and up eat free.</p>
+                    <h3>Fridays in Summer from 2:30pm - closing </h3>
+                    <p class="fst-italic">We Apritiate and value all of our custermers and we know it can be a chalange for some to get to our location so to give back we are giving our senior a free meal when they come in.</p>
                     
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -370,8 +415,8 @@
               <div class="tab-pane" id="tab-5">
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>January 19</h3>
-                    <p class="fst-italic">Half off everything on the menu.</p>
+                    <h3>Available Every Weekend</h3>
+                    <p class="fst-italic">Face the challenge and take on our Monster Burger – a burger 1ft in diameter with a five-pound patty. If you can finish this item in 30 minutes, you and your family will eat for free.</p>
                     
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
@@ -525,7 +570,7 @@
             <div class="error-message"></div>
             <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit">Book a Table</button></div>
+          <div class="text-center"><button type="submit" id="btn">Book a Table</button></div>
         </form>
 
       </div>
@@ -798,8 +843,12 @@
                 <i class="bi bi-clock"></i>
                 <h4>Open Hours:</h4>
                 <p>
-                  Monday-Saturday:<br>
+                  Sunday-Thursday:<br>
                   11:00 AM - 11:00 PM
+                </p>
+                <p>
+                  Friday-Saturday:<br>
+                  10:00 AM - 12:30 AM
                 </p>
               </div>
 
@@ -920,6 +969,13 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>/* random math generator for button */
+    $(document).ready(function() {
+      $("#btn").on("click", function() {
+        var randomNum = Math.floor(Math.random () * (9999 - 1 +1)) + 1;
+          alert ("Your confirmation number is # " + randonNum);
+      });
+    });</script>
 
 </body>
 
